@@ -12,10 +12,10 @@
     <packaging>pom</packaging>
 
     <scm>
+
         <!--<connection>scm:git:https://github.com/Rahulbuk/mmp.git</connection>-->
         <developerConnection>scm:git:https://github.com/Rahulbuk/mmp.git</developerConnection>
         <url>https://github.com/Rahulbuk/mmp/</url>
-    <tag>mmp-1.0.0</tag>
   </scm>
 
 
