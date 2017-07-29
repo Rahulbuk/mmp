@@ -14,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mmp" target="1.5" />
       <module name="mmp1-ejb" target="1.5" />
       <module name="mmp1-entities" target="1.5" />
       <module name="mmp1-ui" target="1.5" />
