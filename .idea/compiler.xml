@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mmp1-ejb" />
+        <module name="mmp1-entities" />
+        <module name="mmp1-web" />
+        <module name="mmp2-core" />
+        <module name="mmp2-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mmp1-ejb" target="1.5" />
+      <module name="mmp1-entities" target="1.5" />
+      <module name="mmp1-ui" target="1.5" />
+      <module name="mmp1-ui (1)" target="1.5" />
+      <module name="mmp1-web" target="1.5" />
+      <module name="mmp2-core" target="1.5" />
+      <module name="mmp2-ui" target="1.5" />
+      <module name="mmp2-web" target="1.5" />
+      <module name="mmp2web" target="1.5" />
+      <module name="mmproot" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
