@@ -4,7 +4,7 @@
 
     <groupId>com.em</groupId>
     <artifactId>mmp</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>mmp1-ui</module>
         <module>mmp2-ui</module>
