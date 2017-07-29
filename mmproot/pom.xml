@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.em</groupId>
+    <artifactId>mmp</artifactId>
+    <version>1.0.0</version>
+    <modules>
+        <module>mmp1-ui</module>
+        <module>mmp2-ui</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <scm>
+        <!--<connection>scm:git:https://github.com/Rahulbuk/mmp.git</connection>-->
+        <developerConnection>scm:git:https://github.com/Rahulbuk/mmp.git</developerConnection>
+        <url>https://github.com/Rahulbuk/mmp/</url>
+      <tag>mmp-1.0.0</tag>
+  </scm>
+
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
+        </plugins>
+    </build>
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>artifactory-releases</name>
+            <url>http://artifactory:80/artifactory/libs-release-local/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>artifactory-snapshots</name>
+            <url>http://artifactory:80/artifactory/libs-snapshot-local/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
