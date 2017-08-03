@@ -16,8 +16,8 @@
     </modules>
     <dependencies>
         <dependency>
-            <groupId></groupId>
-            <artifactId></artifactId>
+            <groupId>com.em</groupId>
+            <artifactId>te</artifactId>
         </dependency>
     </dependencies>
 
