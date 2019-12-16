@@ -5,8 +5,10 @@ pipeline {
         maven:'localmaven'
     }
     stages{
-        stage('maven-build'){
-            sh 'mvn clean install'
-        }
+    dir('mmproot'){
+            stage('maven-build'){
+                sh 'mvn clean install'
+            }
+         }
     }
 }
