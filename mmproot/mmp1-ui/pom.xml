@@ -14,11 +14,5 @@
         <module>mmp1-ejb</module>
         <module>mmp1-web</module>
     </modules>
-    <dependencies>
-        <dependency>
-            <groupId>com.em</groupId>
-            <artifactId>te</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

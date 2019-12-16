@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mmproot/mmp.iml" filepath="$PROJECT_DIR$/mmproot/mmp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmproot/mmp1-ui/mmp1-ejb/mmp1-ejb.iml" filepath="$PROJECT_DIR$/mmproot/mmp1-ui/mmp1-ejb/mmp1-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmproot/mmp1-ui/mmp1-entities/mmp1-entities.iml" filepath="$PROJECT_DIR$/mmproot/mmp1-ui/mmp1-entities/mmp1-entities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmproot/mmp1-ui/mmp1-ui.iml" filepath="$PROJECT_DIR$/mmproot/mmp1-ui/mmp1-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmproot/mmp1-ui/mmp1-web/mmp1-web.iml" filepath="$PROJECT_DIR$/mmproot/mmp1-ui/mmp1-web/mmp1-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmproot/mmp2-ui/mmp2-core/mmp2-core.iml" filepath="$PROJECT_DIR$/mmproot/mmp2-ui/mmp2-core/mmp2-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmproot/mmp2-ui/mmp2-ui.iml" filepath="$PROJECT_DIR$/mmproot/mmp2-ui/mmp2-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmproot/mmp2-ui/mmp2-web/mmp2-web.iml" filepath="$PROJECT_DIR$/mmproot/mmp2-ui/mmp2-web/mmp2-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmproot/mmpui.iml" filepath="$PROJECT_DIR$/mmproot/mmpui.iml" />
+    </modules>
+  </component>
+</project>

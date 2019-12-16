@@ -4,13 +4,22 @@ pipeline {
         jdk 'jdk1.8'
         maven 'localmaven'
     }
-    stages{
-          stage('maven-build') {
-              steps{
-                 dir('mmproot') {
-                       sh 'mvn clean install'
-                 }
-              }
-          }
-     }
+    stages {
+        stage('maven-build') {
+            steps {
+                dir('mmproot') {
+                    sh 'mvn clean install'
+                }
+            }
+        }
+
+        stage('call_liquibase-project') {
+            steps {
+                dir('mmproot') {
+                    def pom = readMavenPom file: 'pom.xml'
+                    echo pom.version
+                }
+            }
+        }
+    }
 }
