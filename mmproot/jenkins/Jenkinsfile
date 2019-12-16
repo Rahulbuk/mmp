@@ -16,7 +16,7 @@ pipeline {
         stage('call_liquibase-project') {
             steps {
                 dir('mmproot') {
-                    def pom = readMavenPom file: 'pom.xml'
+                    pom = readMavenPom file: 'pom.xml'
                     echo pom.version
                 }
             }
