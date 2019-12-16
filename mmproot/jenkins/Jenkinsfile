@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    tools {
+        jdk:'jdk1.8'
+        maven:'localmaven'
+    }
+    stages{
+    dir('mmproot'){
+            stage('maven-build'){
+                sh 'mvn clean install'
+            }
+         }
+    }
+}
