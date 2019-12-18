@@ -36,7 +36,9 @@ pipeline {
         }
 
         stage('call_liquibase-project') {
-            build job: 'liquibase_pipeline/master', parameters:[string(name: 'BUILD_VERSION', value: '1.0.1')], wait:true
+            steps {
+                build job: 'liquibase_pipeline/master', parameters: [string(name: 'BUILD_VERSION', value: '1.0.1')], wait: true
+            }
         }
     }
 }
