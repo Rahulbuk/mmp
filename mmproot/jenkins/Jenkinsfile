@@ -4,21 +4,31 @@ pipeline {
         jdk 'jdk1.8'
         maven 'localmaven'
     }
+    properties([
+            [$class: 'JiraProjectProperty'],
+            parameters([choice(choices: ['INT', 'TEST'], description: '', name: 'BUILD_ENV')])
+    ])
     stages {
         stage('maven-build') {
             steps {
                 dir('mmproot') {
                     sh 'mvn clean install'
+                    echo ${params.BUILD_ENV}
                 }
             }
         }
 
         stage('call_liquibase-project') {
-            steps {
-                dir('mmproot') {
-                    pom = readMavenPom file: 'pom.xml'
-                    echo pom.version
+            input {
+                message "Should we continue?"
+                ok "Yes, we should."
+                submitter "alice,bob"
+                parameters {
+                    string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
                 }
+            }
+            steps {
+                echo "Hello, ${PERSON}, nice to meet you."
             }
         }
     }
