@@ -20,7 +20,17 @@ pipeline {
             steps {
                 dir('mmproot') {
                     sh 'mvn clean install'
-                    echo ${params.CHOICE}
+                    echo "${params.CHOICE}"
+
+                    echo "Hello ${params.PERSON}"
+
+                    echo "Biography: ${params.BIOGRAPHY}"
+
+                    echo "Toggle: ${params.TOGGLE}"
+
+                    echo "Choice: ${params.CHOICE}"
+
+                    echo "Password: ${params.PASSWORD}"
                 }
             }
         }
