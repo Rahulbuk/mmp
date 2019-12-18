@@ -36,17 +36,7 @@ pipeline {
         }
 
         stage('call_liquibase-project') {
-            input {
-                message "Should we continue?"
-                ok "Yes, we should."
-                submitter "alice,bob"
-                parameters {
-                    string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-                }
-            }
-            steps {
-                echo "Hello, ${PERSON}, nice to meet you."
-            }
+            build job: 'liquibase_pipeline/master', parameters:[string(name: 'BUILD_VERSION', value: '1.0.1')], wait:true
         }
     }
 }
