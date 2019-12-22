@@ -1,3 +1,4 @@
+def temp_var =''
 pipeline {
     agent any
     tools {
@@ -36,9 +37,6 @@ pipeline {
         }
 
         stage('call_liquibase-project') {
-            environment {
-                temp_var =''
-            }
             steps {
                 script {
                     def readPOm = load '/tmp/readpomScript.groovy'
@@ -47,7 +45,7 @@ pipeline {
                 }
                 echo '${temvarx}'
                 echo '${temp_var}'
-                build job: 'liquibase_pipeline/master', parameters: [string(name: 'BUILD_VERSION', value: '${temp_var}')], wait: true
+                build job: 'liquibase_pipeline/master', parameters: [string(name: 'BUILD_VERSION', value: "${temp_var}")], wait: true
             }
         }
     }
