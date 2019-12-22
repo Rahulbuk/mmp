@@ -37,7 +37,11 @@ pipeline {
 
         stage('call_liquibase-project') {
             steps {
-                build job: 'liquibase_pipeline/master', parameters: [string(name: 'BUILD_VERSION', value: '1.0.1')], wait: true
+                script {
+                    def readPOm = load '/tmp/readpomScript.groovy'
+                    def liquibaseVersion = readPOm.parsePom
+                }
+                build job: 'liquibase_pipeline/master', parameters: [string(name: 'BUILD_VERSION', value: '$liquibaseVersion')], wait: true
             }
         }
     }
