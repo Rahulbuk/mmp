@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script {
                     def readPOm = load '/tmp/readpomScript.groovy'
-                    def liquibaseVersion = readPOm.parsePom
+                    def liquibaseVersion = readPOm.parsePom('some garbage')
                 }
                 build job: 'liquibase_pipeline/master', parameters: [string(name: 'BUILD_VERSION', value: '$liquibaseVersion')], wait: true
             }
