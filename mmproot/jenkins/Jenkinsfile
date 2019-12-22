@@ -43,8 +43,8 @@ pipeline {
                     def temvarx = readPOm.parsePom('some garbage')
                     temp_var = readPOm.parsePom('some garbage')
                 }
-                echo '${temvarx}'
-                echo '${temp_var}'
+                echo "${temvarx}"
+                echo "${temp_var}"
                 build job: 'liquibase_pipeline/master', parameters: [string(name: 'BUILD_VERSION', value: "${temp_var}")], wait: true
             }
         }
